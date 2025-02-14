@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab4 - Exercise 1</title>
+    </head>
+    <body>
+        <h1>JavaScript Lab</h1>
+        <script>
+            // Write your JavaScript code here
+            // function add(x, y)
+            // {
+            //     let sum = x + y
+            //     return sum
+            // }
+
+            // function sub(x, y)
+            // {
+            //     let difference = x - y
+            //     return difference
+            // }
+
+            // console.log(add(2, 3))
+            // console.log(sub(5, 3))
+            
+            // function add(x, y=0)
+            // {
+            //     let sum = x + y
+            //     return sum
+            // }
+
+            // function sub(x, y=9)
+            // {
+            //     let difference = x - y
+            //     return difference
+            // }
+
+            // console.log(add(3))
+            // console.log(sub(10))
+
+            // console.log(add(3,2))
+            // console.log(sub(3, 2))
+
+            // let add = (x, y) => x + y
+            // let sub = (x, y) => x - y
+
+            // let mul = (x, y) => x*y
+            // let div = (x, y) => y === 0 ? NaN: (x/y)
+
+            // console.log(add(3,2))
+            // console.log(sub(3, 2))
+            // console.log(mul(2, 3))
+            // console.log(div(10, 5))
+            // console.log(div(4/0))
+
+            function calculator(x, y, callback)
+            {
+                return callback(x, y)
+            }
+
+            let add = (x, y) => x + y
+            let sub = (x, y) => x - y
+
+            let mul = (x, y) => x*y
+            let div = (x, y) => y === 0 ? NaN: (x/y)
+
+            let result = calculator(2, 3, add)
+            console.log(result)
+
+            result = calculator(2, 3, mul)
+            console.log(result)
+
+        </script>
+    </body>
+</html>
