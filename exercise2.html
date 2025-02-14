@@ -7,42 +7,52 @@
         <h1>JavaScript Lab</h1>
         <script>
             // Write your JavaScript code here
+            // Declaring Functions
+            // Step 1:
             // function add(x, y)
             // {
             //     let sum = x + y
             //     return sum
             // }
-
+            // step 2:
             // function sub(x, y)
             // {
             //     let difference = x - y
             //     return difference
             // }
 
+            // step 3:
             // console.log(add(2, 3))
             // console.log(sub(5, 3))
             
+            // Using Default Parameters:
+            // Step 1:
             // function add(x, y=0)
             // {
             //     let sum = x + y
             //     return sum
             // }
 
+            // Step 2:
             // function sub(x, y=9)
             // {
             //     let difference = x - y
             //     return difference
             // }
 
+            // Step 3:
             // console.log(add(3))
             // console.log(sub(10))
 
             // console.log(add(3,2))
             // console.log(sub(3, 2))
 
+            // Implementing Arrow Functions:
+            // Step 1:
             // let add = (x, y) => x + y
             // let sub = (x, y) => x - y
 
+            // Step 2:
             // let mul = (x, y) => x*y
             // let div = (x, y) => y === 0 ? NaN: (x/y)
 
@@ -52,8 +62,11 @@
             // console.log(div(10, 5))
             // console.log(div(4/0))
 
+            // Understanding Callback Function
+            // Step 1
             function calculator(x, y, callback)
             {
+                //Step 2
                 return callback(x, y)
             }
 
@@ -63,6 +76,7 @@
             let mul = (x, y) => x*y
             let div = (x, y) => y === 0 ? NaN: (x/y)
 
+            // Step 3
             let result = calculator(2, 3, add)
             console.log(result)
 
